@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.navbar .logo h1 {
+    font-size: 2rem;
+}
+
+.navbar .nav-links a {
+    margin-left: 20px;
+    color: green;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    color: #d3d3d3;
+}
+
+/* Carousel */
+.carousel {
+    padding: 40px;
+    text-align: center;
+}
+
+.carousel h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-items {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.carousel-items img {
+    width: 300px;
+    height: 200px;
+    margin-right: 15px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
